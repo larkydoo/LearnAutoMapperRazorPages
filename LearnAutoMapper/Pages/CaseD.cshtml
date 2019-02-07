@@ -11,14 +11,8 @@
 <h3>Entity's Address is flattened to the properties AddressStreet and AddressTown in the DTO.</h3>
 <p>No custom mapping is needed in this case as long as the names fit the convention, i.e. Entity.A.B -> DTO.AB </p>
 <div class="text-center">
-    <h1 class="display-4">Person Entity Object</h1>
-    <p>Name: @Model.MyEntity.Name</p>
-    <p>Age:  @Model.MyEntity.Age years old. </p>
-    <p>Address: @Model.MyEntity.Address.Street, @Model.MyEntity.Address.Town</p>
-    <h1 class="display-4">Person DTO Object</h1>
-    <p>Name: @Model.MyDTO.Name</p>
-    <p>Age:  @Model.MyDTO.Age years old. </p>
-    <p>Address: @Model.MyDTO.AddressStreet, @Model.MyDTO.AddressTown</p>
+    <pre>Person Entity: @Html.Raw(Json.Serialize(Model.MyEntity))</pre>
+    <pre>PersonDTO: @Html.Raw(Json.Serialize(Model.MyDTO))</pre>
 </div>
 <a href="casec">&lt;-- Previous</a>
 |

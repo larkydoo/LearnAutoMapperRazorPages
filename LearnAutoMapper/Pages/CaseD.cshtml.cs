@@ -24,6 +24,7 @@ namespace LearnAutoMapper.Pages
                 }
             };
             MyDTO = Mapper.Map<PersonDTO>(MyEntity);
+
             return Page();
         }
 
