@@ -1,0 +1,28 @@
+﻿@page
+@model LearnAutoMapper.Pages.CaseCModel
+@{
+    ViewData["Title"] = "Case C - PersonDTO is a superset of Person";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h3>PersonDTO has all properties in Person, has additional properties as well.</h3>
+
+<div class="text-center">
+    <h1 class="display-4">Person Entity Object</h1>
+    <p>My name is @Model.MyEntity.Name</p>
+    <p>I am @Model.MyEntity.Age years old. </p>
+    @if (TempData["Exception"] != null)
+    {
+        <p>@TempData["Exception"]</p>
+    }
+    else
+    {
+        <h1 class="display-4">Person DTO Object</h1>
+        <p>My name is @Model.MyDTO.Name</p>
+        <p>I am @Model.MyDTO.Age years old. </p>
+        <p>My hometown is @Model.MyDTO.Hometown</p>
+    }
+</div>
+<a href="caseb">&lt;-- Previous</a>
+|
+<a href="cased">Next --&gt;</a>

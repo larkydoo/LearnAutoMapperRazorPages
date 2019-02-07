@@ -1,0 +1,20 @@
+﻿@page
+@model LearnAutoMapper.Pages.CaseAModel
+@{
+    ViewData["Title"] = "CaseA - Simple Mapping";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h3>1:1 property mapping between Person Entity and PersonDTO.</h3>
+<p>In this case, there is a 1:1 mapping between the fields in Person and those in PersonDTO. By default, since AutoMapper was initialized in Startup.cs with the line  <ul>services.AddAutoMapper(typeof(Startup));</ul> it is loaded with an understanding of the schemas of all the objects in the project. </p>
+<div class="text-center">
+    <h1 class="display-4">Person Entity Object</h1>
+    <p>My name is @Model.MyEntity.Name</p>
+    <p>I am @Model.MyEntity.Age years old. </p>
+    <h1 class="display-4">Person DTO Object</h1>
+    <p>My name is @Model.MyDTO.Name</p>
+    <p>I am @Model.MyDTO.Age years old. </p>
+</div>
+<a href="setup">&lt;-- Previous</a>
+|
+<a href="caseb">Next --&gt;</a>

@@ -1,0 +1,18 @@
+﻿@page
+@model LearnAutoMapper.Pages.SetupModel
+@{
+    ViewData["Title"] = "Setup";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h3>Setup is very easy to get started.</h3>
+<ol>
+    <li>Create an ASP.NET Core Razor Pages application</li>
+    <li>Add AutoMapper.Extensions.Microsoft.DependencyInjection Nuget Package</li>
+    <li>Initialize Automapper in Startup.cs:  services.AddAutoMapper(typeof(Startup));</li>
+    <li>Create BasePageModel to inject the AutoMapper static API so it can be accessed in each PageModel class that implements it. This is a shortcut so you don't have to inject Automapper on every page.</li>
+    <li>Go to town!</li>
+</ol>
+<a href="index">&lt;-- Previous</a>
+|
+<a href="casea">Next --&gt;</a>
