@@ -33,10 +33,10 @@ namespace LearnAutoMapper.Pages
             return Page();
         }
 
-        public class MappingProfile : Profile
-        {
-            public MappingProfile() => CreateMap<Person, PersonDTO>().ReverseMap();
-        }
+        //public class MappingProfile : Profile
+        //{
+        //    public MappingProfile() => CreateMap<Person, PersonDTO>().ReverseMap();
+        //}
 
         public class Person
         {
